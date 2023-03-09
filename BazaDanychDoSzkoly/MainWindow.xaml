@@ -1,0 +1,24 @@
+﻿<Window x:Class="BazaDanychDoSzkoly.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BazaDanychDoSzkoly"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Imie" HorizontalAlignment="Left" Margin="35,38,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Kraj" HorizontalAlignment="Left" Margin="35,100,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.494,-0.436"/>
+        <TextBox HorizontalAlignment="Left" Margin="166,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.496,-0.762" Height="26" Name="txt_name"/>
+        <TextBox HorizontalAlignment="Left" Margin="166,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.464,0.395" Height="26" Name="txt_country"/>
+        <TextBox HorizontalAlignment="Left" Margin="166,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Height="26" Name="txt_secondName"/>
+        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="35,69,0,0" VerticalAlignment="Top" Width="91" Height="26"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="166,150,0,0" VerticalAlignment="Top" Width="51" Name="btn_insert" Click="btn_insert_Click"/>
+        <Button Content="Edytuj" HorizontalAlignment="Left" Margin="256,150,0,0" VerticalAlignment="Top" Width="51" Name="btn_Update" Click="btn_Update_Click"/>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="346,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.534,-0.093" Width="51" Name="btn_delete" Click="btn_Delete_Click"/>
+        <DataGrid ItemsSource="{Binding}" Margin="0,217,0,0" Name="datagrid1" MouseDoubleClick="datagrid1_MouseDoubleClick"  />
+        <Label Content="ID" HorizontalAlignment="Left" Margin="440,69,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="503,69,0,0" TextWrapping="Wrap" Name="search_txt" VerticalAlignment="Top" Width="68" Height="26"/>
+
+    </Grid>
+</Window>
